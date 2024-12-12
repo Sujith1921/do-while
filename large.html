@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to return size based on input
+function getSize(input) {
+    switch (input) {
+        case 1:
+            return "Large";
+        case 2:
+            return "Medium";
+        case 3:
+            return "Small";
+        default:
+            return "Invalid input";
+    }
+}
+
+// Main program with do-while loop
+function main() {
+    let continueProgram;
+    do {
+        // Take user input
+        let input = parseInt(prompt("Input (1 for Large):"));
+        
+        // Get size based on input
+        let size = getSize(input);
+        console.log(size);
+        
+        // Ask if user wants to continue
+        continueProgram = prompt("Do you want to continue? (Yes/No)").toLowerCase();
+    } while (continueProgram === "no");
+
+
+
+    do {
+        // Take user input
+        let input = parseInt(prompt("Input  (2 for Medium):"));
+        
+        // Get size based on input
+        let size = getSize(input);
+        console.log(size);
+        
+        // Ask if user wants to continue
+        continueProgram = prompt("Do you want to continue? (Yes/No)").toLowerCase();
+    } while (continueProgram === "no");
+    
+   
+
+    do {
+        // Take user input
+        let input = parseInt(prompt("Input (3 for Small):"));
+        
+        // Get size based on input
+        let size = getSize(input);
+        console.log(size);
+        
+        // Ask if user wants to continue
+        continueProgram = prompt("Do you want to continue? (Yes/No)").toLowerCase();
+    } while (continueProgram === "no");
+    document.write("Input:1=Large"+"<br>"+"Input:2=Medium"+"<br>"+"Input:3=Small")
+}
+
+// Run the program
+main();
+    </script>
+</body>
+</html>
